@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BEC Shop</h1>
+        </div>
+        <div class="cart">
+            <button onclick="viewCart()">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Featured Products</h2>
+        <div class="products">
+            <div class="product" data-id="1">
+                <img src="Z:\Devps\img1.jpg.png" alt="Product 1">
+                <h3>JERRY</h3>
+                <p>$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2">
+                <img src="Z:\Devps\img2.jpg.jfif" alt="Product 2">
+                <h3>DORA</h3>
+                <p>$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3">
+                <img src="Z:\Devps\img3.jpg" alt="Product 3">
+                <h3>BANTU</h3>
+                <p>$39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 My Shop | All Rights Reserved</p>
+    </footer>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button onclick="checkout()">Proceed to Checkout</button>
+            <button onclick="closeCart()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
